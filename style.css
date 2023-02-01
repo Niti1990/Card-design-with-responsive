@@ -1,0 +1,171 @@
+body {
+	background: #00a651;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+
+	margin-top: 50px;
+}
+.card {
+	background-color: white;
+	border: 2px solid black;
+	background: #fff;
+	border-radius: 10px;
+	height: 220px;
+	width: 150px;
+	margin-left: 100px;
+	margin-top: 70px;
+
+	cursor: pointer;
+}
+.card:hover p {
+	transform: scale(1.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	color: black;
+}
+
+.card p {
+	text-align: center;
+	font: 100px/220px Georgia, Times New Roman, serif;
+}
+/* for diamond*/
+
+.suit_diamonds:before,
+.suit_diamonds:after {
+	content: '♦';
+	color: #ff0000;
+}
+
+.suit_diamonds:before {
+	position: absolute;
+	font-size: 35px;
+	left: 115px;
+}
+.suit_diamonds:after {
+	position: absolute;
+	font-size: 35px;
+	left: 215px;
+	top: 300px;
+}
+/* for Heart*/
+
+.suit_hearts:before,
+.suit_hearts:after {
+	content: '♥';
+	color: #ff0000;
+}
+.suit_hearts:before {
+	position: absolute;
+	font-size: 35px;
+	left: 360px;
+}
+.suit_hearts:after {
+	position: absolute;
+	font-size: 35px;
+	left: 470px;
+	top: 300px;
+}
+
+/* for club */
+
+.suit_clubs:before,
+.suit_clubs:after {
+	content: '♣';
+	color: #000;
+}
+.suit_clubs:before {
+	position: absolute;
+	font-size: 35px;
+	left: 620px;
+}
+.suit_clubs:after {
+	position: absolute;
+	font-size: 35px;
+	left: 720px;
+	top: 300px;
+}
+/* for spade */
+
+.suit_spades:before,
+.suit_spades:after {
+	content: '♠';
+	color: #000;
+}
+
+.suit_spades:before {
+	position: absolute;
+	font-size: 35px;
+	left: 870px;
+}
+.suit_spades:after {
+	position: absolute;
+	font-size: 35px;
+	left: 990px;
+	top: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+	.card {
+		width: 30rem;
+		margin: 0.5em;
+		padding: 0.5em;
+	}
+	/* FOR DIAMOND*/
+	.suit_diamonds:before {
+		position: absolute;
+		font-size: 20px;
+		left: 20px;
+	}
+	.suit_diamonds:after {
+		position: absolute;
+		font-size: 20px;
+		left: 160px;
+		top: 270px;
+	}
+
+	/* FOR HEART*/
+
+	.suit_hearts:before {
+		position: absolute;
+		font-size: 20px;
+		left: 210px;
+	}
+	.suit_hearts:after {
+		position: absolute;
+		font-size: 20px;
+		left: 340px;
+		top: 270px;
+	}
+	/* FOR CLUB */
+
+	.suit_clubs:before {
+		position: absolute;
+		font-size: 20px;
+		left: 410px;
+	}
+	.suit_clubs:after {
+		position: absolute;
+		font-size: 20px;
+		left: 540px;
+		top: 270px;
+	}
+
+	/*FOR SPADE */
+
+	.suit_spades:before {
+		position: absolute;
+		font-size: 20px;
+		left: 600px;
+	}
+	.suit_spades:after {
+		position: absolute;
+		font-size: 20px;
+		left: 740px;
+		top: 270px;
+	}
+}
